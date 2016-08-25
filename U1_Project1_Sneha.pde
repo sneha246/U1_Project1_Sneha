@@ -15,10 +15,11 @@ void setup()
 void draw()
 {
   background(255);
- pMaze.resize (width,height);
+pMaze.resize (width,height);
  image (pMaze, 0, 0);
  //pMaze.resize (50,50); 
     image (donald, mouseX, mouseY); 
+donald.resize (40,50);
  
 }
  
