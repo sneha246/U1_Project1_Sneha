@@ -1,21 +1,20 @@
 PImage pMaze; 
 PImage donald; 
 float xDirection; 
-int rad = 60;    
+int xdirection = 1; 
+int ydirection = 1; 
+int rad = 60;
+int x = 0;
 float xpos, ypos;   
 float xspeed = 25.8; 
 float yspeed = 25.2;  
-int xdirection = 1; 
-int ydirection = 1; 
-int x = 0;
-
 
 
 void setup()
 {
   fullScreen();
   pMaze = loadImage("mazeProcessing.png");
-  donald = loadImage("Donald.png"); 
+  donald = loadImage("Donald.jpg"); 
 
   
  fullScreen();
@@ -27,7 +26,8 @@ void setup()
   xpos = width/2;
   ypos = height/2;
  
- 
+
+
 }
 
 void draw()
@@ -52,15 +52,13 @@ donald.resize (40,50);
   }
 {
  ellipse(xpos, ypos, rad, rad);
- 
- 
- 
 
+
+ if(dist(mouseX, mouseY, xpos, ypos) < rad){
+   background(255, 0, 0); 
+  }
+  else
+
+    fill(0, 255, 0);
+  }
 }
-
-
-
-
-
- 
-} 
