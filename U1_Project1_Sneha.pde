@@ -6,8 +6,9 @@ int ydirection = 1;
 int rad = 60;
 int x = 0;
 float xpos, ypos;   
-float xspeed = 25.8; 
-float yspeed = 25.2;  
+float xspeed = 23.8; 
+float yspeed = 23.2;  
+
 
 
 void setup()
@@ -54,11 +55,13 @@ donald.resize (40,50);
  ellipse(xpos, ypos, rad, rad);
 
 
- if(dist(mouseX, mouseY, xpos, ypos) < rad){
+ if(dist(mouseX, mouseY, xpos, ypos) < rad)
+ {
    background(255, 0, 0); 
   }
   else
 
     fill(0, 255, 0);
   }
+
 }
