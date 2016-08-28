@@ -3,8 +3,8 @@ PImage donald;
 float xDirection; 
 int rad = 60;    
 float xpos, ypos;   
-float xspeed = 5.8; 
-float yspeed = 5.2;  
+float xspeed = 25.8; 
+float yspeed = 25.2;  
 int xdirection = 1; 
 int ydirection = 1; 
 int x = 0;
@@ -52,6 +52,8 @@ donald.resize (40,50);
   }
 {
  ellipse(xpos, ypos, rad, rad);
+ 
+ 
  
 
 }
